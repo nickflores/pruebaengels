@@ -1,626 +1,979 @@
 * {
-  padding: 0;
-  margin: 0;
-  text-decoration: none;
-  list-style: none;
-  box-sizing: border-box;
-  font-family: "lato";
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "lato";
 }
+
 .nav {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #4682b4;
-  padding: 15px;
-  /* height: 81px;
-  width: 100%; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #4682b4;
+    padding: 15px;
+    /* height: 81px;
+width: 100%; */
 }
+
 .nav a {
-  text-decoration: none;
-  color: #fff;
+    text-decoration: none;
+    color: #fff;
 }
+
+.nav-item button {
+    background-color: #176eaa;
+    color: white;
+    padding: 10px;
+    border: solid white 2px;
+}
+
+.nav-item button:hover {
+    background-color: #4682b4;
+}
+
 .logo {
-  height: 40px;
-  margin-right: 50px;
+    height: 40px;
+    margin-right: 50px;
 }
+
 .list {
-  list-style: none;
-  display: flex;
-  gap: 25px;
+    list-style: none;
+    display: flex;
+    gap: 25px;
 }
+
 .nav ul {
-  margin-right: 20px;
+    margin-right: 20px;
 }
+
 .nav ul li {
-  display: inline-block;
-  line-height: 80px;
-  margin: 0px 20px;
+    display: inline-block;
+    line-height: 80px;
+    margin: 0px 20px;
 }
+
 .nav ul li a {
-  font-size: 18px;
-  color: white;
-  padding: 7px 13px;
-  border-radius: 5px;
+    font-size: 18px;
+    color: white;
+    padding: 7px 13px;
+    border-radius: 5px;
 }
+
+.check {
+    display: none;
+}
+
 .link:hover {
-  background-color: #176eaa;
+    background-color: #176eaa;
 }
+
 .checkbtn {
-  font-size: 30px;
-  color: #fff;
-  float: right;
-  line-height: 80px;
-  margin-right: 20px;
-  cursor: pointer;
-  display: none;
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 20px;
+    cursor: pointer;
+    display: none;
 }
+
 .principal {
-  background-color: #4682b4;
-  align-items: center;
-  width: 100%;
-  /* clip-path: polygon(
-    0% 0%,
-    11% 0,
-    38% 0%,
-    66% 0,
-    88% 0%,
-    100% 0,
-    100% 86%,
-    83% 96%,
-    60% 89%,
-    39% 95%,
-    15% 90%,
-    0 100%
-  ); */
+    background-color: #4682b4;
+    align-items: center;
+    width: 100%;
+    /* clip-path: polygon(
+  0% 0%,
+  55% 0,
+  58% 0%,
+  66% 0,
+  88% 0%,
+  100% 0,
+  100% 86%,
+  83% 96%,
+  60% 89%,
+  59% 95%,
+  25% 92%,
+  0 100%
+); */
 }
+
 .container {
-  display: flex;
+    display: flex;
 }
+
 .icono-card {
-  font-size: 30px;
-  padding-bottom: 4px;
+    font-size: 30px;
+    padding-bottom: 4px;
 }
+
 .div-img-principal {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  text-align: center;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
+
 .texto {
-  width: 50%;
-  margin-right: 50px;
-  position: relative;
-  top: 30px;
+    width: 50%;
+    margin-right: 50px;
+    position: relative;
+    top: 30px;
 }
+
 .principal-img {
-  width: 450px;
-  height: 450px;
-  border: solid 1px transparent;
-  border-radius: 200px;
-  position: relative;
-  top: -80px;
+    width: 450px;
+    height: 450px;
+    border: solid 1px transparent;
+    border-radius: 200px;
+    position: relative;
+    top: -80px;
 }
+
 .principal-titulo {
-  color: #fff;
-  font-size: 60px;
+    color: #fff;
+    font-size: 60px;
 }
+
 .principal-texto {
-  color: #fff;
-  padding: 40px 0px;
-  margin-right: 80px;
+    color: #fff;
+    padding: 40px 0px;
+    margin-right: 80px;
 }
+
 .btn-icon {
-  font-size: 20px;
-  background-color: transparent;
-  border: #176eaa 1px;
-  color: #fff;
+    font-size: 20px;
+    background-color: transparent;
+    border: #176eaa 1px;
+    color: #fff;
 }
+
 .principal-icono {
-  color: #fff;
-  padding-left: 10px;
-  font-size: 15px;
+    color: #fff;
+    padding-left: 10px;
+    font-size: 15px;
 }
+
 .fa-regular {
-  color: #fff;
-  font-size: 20px;
+    color: #fff;
+    font-size: 20px;
 }
+
 .cards {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .card {
-  border: solid #176eaa 2px;
-  border-radius: 15px;
-  margin: 0px 30px;
-  padding: 40px 20px;
-  text-align: center;
-  width: 10%;
-  color: #176eaa;
-  font-size: 18px;
-  position: relative;
-  top: -70px;
-  background-color: #fff;
+    border: solid #176eaa 2px;
+    border-radius: 15px;
+    margin: 0px 30px;
+    padding: 40px 20px;
+    text-align: center;
+    width: 10%;
+    color: #176eaa;
+    font-size: 18px;
+    position: relative;
+    top: -70px;
+    background-color: #fff;
 }
+
 .carreras-titulo {
-  text-align: center;
-  padding: 0px 35%;
+    text-align: center;
+    padding: 0px 35%;
 }
+
 .carrera-img {
-  width: 100%;
-  transition: all 300ms;
+    width: 100%;
+    transition: all 300ms;
 }
+
 .carrera-img:hover {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
+
 .carreras-titulo h2 {
-  color: #4682b4;
-  font-size: 40px;
+    color: #4682b4;
+    font-size: 40px;
 }
+
 .carreras-container {
-  display: flex;
-  width: 100%;
-  padding: 60px 250px 0px 250px;
+    display: flex;
+    width: 100%;
+    padding: 60px 250px 0px 250px;
 }
+
 .carreras-nombre {
-  width: 100%;
-  text-align: center;
+    width: 100%;
+    text-align: center;
 }
+
 .carreras-nombre h3 {
-  color: #176eaa;
-  font-size: 20px;
-  padding-bottom: 10px;
+    color: #176eaa;
+    font-size: 20px;
+    padding-bottom: 10px;
 }
+
 .carreras-nombre p {
-  font-size: 15px;
+    font-size: 15px;
 }
+
 .carreras-nombre img {
-  width: 90%;
+    width: 90%;
 }
+
+.imagenes-ca {
+    padding: 10px 0px;
+}
+
 .beneficios-container {
-  display: flex;
-  justify-content: space-around;
-  background-color: #4682b4;
-  margin-top: 100px;
-  width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #4682b4;
+    margin-top: 100px;
+    width: 100%;
 }
+
 .beneficios-imagenes {
-  width: 50%;
-  position: relative;
+    width: 50%;
+    position: relative;
 }
+
 .beneficios-imagenes img {
-  border: solid #fff 4px;
-  border-radius: 120px;
+    border: solid #fff 4px;
+    border-radius: 120px;
 }
+
 .beneficios-img1 {
-  width: 240px;
-  position: absolute;
-  top: -25px;
-  left: 25%;
+    width: 240px;
+    position: absolute;
+    top: -25px;
+    left: 25%;
 }
+
 .beneficios-img2 {
-  width: 160px;
-  position: absolute;
-  top: 105px;
-  left: 55%;
+    width: 160px;
+    position: absolute;
+    top: 105px;
+    left: 55%;
 }
+
 .beneficios-img3 {
-  width: 200px;
-  position: absolute;
-  top: 245px;
-  left: 50%;
+    width: 200px;
+    position: absolute;
+    top: 245px;
+    left: 50%;
 }
+
 .beneficios-img4 {
-  width: 190px;
-  position: absolute;
-  top: 65%;
-  left: 30%;
+    width: 190px;
+    position: absolute;
+    top: 65%;
+    left: 30%;
 }
+
 .beneficios-img5 {
-  width: 180px;
-  position: absolute;
-  top: 270px;
-  left: 11%;
+    width: 180px;
+    position: absolute;
+    top: 270px;
+    left: 11%;
 }
+
 .beneficios-img6 {
-  width: 170px;
-  position: absolute;
-  top: 115px;
-  left: 5%;
+    width: 170px;
+    position: absolute;
+    top: 115px;
+    left: 5%;
 }
+
 .beneficios-parrafos {
-  width: 50%;
+    width: 50%;
 }
+
 .beneficios-parrafos h2 {
-  color: #fff;
-  font-size: 50px;
-  padding-bottom: 20px;
+    color: #fff;
+    font-size: 50px;
+    padding-bottom: 20px;
 }
+
 .beneficios-parrafos-container {
-  display: flex;
-  width: 100%;
-  height: auto;
-  color: #fff;
-  padding: 15px 0px;
-  align-items: flex-end;
+    display: flex;
+    width: 100%;
+    height: auto;
+    color: #fff;
+    padding: 15px 0px;
+    align-items: flex-end;
 }
+
 .beneficios-iconos {
-  width: 20%;
-  /* text-align: center; */
+    width: 20%;
+    /* text-align: center; */
 }
+
 .beneficios-parrafos-container img {
-  width: 70px;
-  border-radius: 50px;
-  text-align: center;
-  background-color: white;
-  padding: 8px;
+    width: 70px;
+    border-radius: 50px;
+    text-align: center;
+    background-color: white;
+    padding: 8px;
 }
+
 .beneficios-texto {
-  width: 80%;
-  padding-right: 100px;
+    width: 80%;
+    padding-right: 100px;
 }
+
 .beneficios-texto h3 {
-  padding-bottom: 10px;
+    padding-bottom: 10px;
 }
+
 .experiencias {
-  width: 100%;
+    width: 100%;
 }
+
 .experiencias-container {
-  padding: 150px 0px;
+    padding: 150px 0px;
 }
+
 .experiencias-alumnos {
-  text-align: center;
+    text-align: center;
 }
+
 .experiencia-alumno p {
-  padding-left: 20px;
+    padding-left: 20px;
 }
+
 .experiencias-alumnos h2 {
-  color: #4682b4;
-  font-size: 35px;
-  padding: 0px 20%;
+    color: #4682b4;
+    font-size: 35px;
+    padding: 0px 20%;
 }
+
 .experiencias-alumnos p {
-  padding: 20px 25%;
+    padding: 20px 25%;
 }
+
 .experiencia-alumno {
-  border: solid #176eaa 3px;
-  border-radius: 15px;
-  margin: 0px 35%;
-  padding: 25px;
-  position: relative;
+    border: solid #176eaa 3px;
+    border-radius: 15px;
+    margin: 0px 35%;
+    padding: 25px;
+    position: relative;
 }
+
 .experiencia-alumno img {
-  width: 80px;
-  position: absolute;
-  top: 30px;
-  left: -45px;
-  border: solid #176eaa 5px;
-  border-radius: 50px;
+    width: 80px;
+    position: absolute;
+    top: 30px;
+    left: -45px;
+    border: solid #176eaa 5px;
+    border-radius: 50px;
+}
+
+.experiencia-publicada {
+    transition: all 300ms;
+}
+
+.experiencia-publicada:hover {
+    transform: scale(1.1);
 }
 
 .alumno {
-  text-align: end;
-  padding-top: 10px;
-}
-.img-decoracion-experiencias {
-  width: 100px;
-}
-.experiencia-publicada {
-  position: relative;
-  padding: 50px 0px;
-}
-.experiencia-publicada img {
-  position: absolute;
-}
-.img-experiencia1 {
-  width: 100px;
-  left: 100px;
-  top: -5px;
-  border: solid yellowgreen 3px;
-  border-radius: 50px;
-}
-.img-experiencia2 {
-  width: 70px;
-  right: 100px;
-  top: -5px;
-  border: solid pink 4px;
-  border-radius: 50px;
-}
-.img-experiencia3 {
-  width: 70px;
-  top: 200px;
-  left: 70px;
-  border: solid cornflowerblue 3px;
-  border-radius: 50px;
-}
-.img-experiencia4 {
-  width: 50px;
-  top: 190px;
-  right: 200px;
-  border: solid plum 3px;
-  border-radius: 50px;
-}
-.img-experiencia5 {
-  width: 40px;
-  top: 290px;
-  left: 550px;
-  border: solid orange 3px;
-  border-radius: 50px;
-}
-.login {
-  width: 100%;
-  height: auto;
-  position: relative;
-}
-.login-container {
-  padding: 300px 0px;
-  text-align: center;
-}
-.login-container h2 {
-  color: #4682b4;
-}
-.formulario {
-  border: solid blue 3px;
-  border-radius: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 50px 0px;
-}
-.formulario h2 {
-  font-size: 30px;
-  padding: 10px;
-}
-.inputs {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px 0px;
-}
-.inputs input {
-  padding: 10px 40px;
-  margin: 5px 0px;
-  border: solid blue 2px;
-  border-radius: 15px;
-  text-align: center;
-}
-.formulario button {
-  color: white;
-  background-color: #4682b4;
-  padding: 10px 50px;
-  border: solid transparent 1px;
-  border-radius: 10px;
-}
-footer {
-  width: 100%;
-  height: auto;
-  background-color: #4682b4;
-  color: #fff;
-  position: relative;
-}
-.footer-container {
-  display: flex;
-}
-.footer-seccion {
-  width: 30%;
-  padding: 15px;
-}
-.logo-footer {
-  padding-bottom: 20px;
-  width: 95%;
-}
-.footer-iconos {
-  width: 25px;
-  padding: 15px 0px;
-  margin-right: 30px;
-}
-.footer-listas {
-  display: flex;
-  width: 70%;
-  padding: 10px;
-}
-.footer-listas ul {
-  width: 100%;
-}
-.footer-listas ul li {
-  margin: 12px 0px;
-  padding-left: 20px;
-}
-.footer-listas ul li a {
-  color: #fff;
-}
-.copyright {
-  position: relative;
-}
-.linea {
-  width: 50%;
-  height: 1px;
-  background-color: #fff;
-  position: absolute;
-  top: 0%;
-  left: 25%;
-  transform: translateY(-50%);
-}
-.wsp {
-  width: 90px;
-}
-.copyright p {
-  text-align: center;
-  padding: 10px 0px;
-}
-.imagen-wsp {
-  position: relative;
-}
-.copyright button {
-  background-color: transparent;
-  border: solid transparent 1px;
-  position: absolute;
-  top: -58px;
-  right: 10px;
-}
-@media (max-width: 902px) {
-  .enlace-logo {
-    padding-left: 20px;
-  }
-  .nav ul li a {
-    font-size: 12px;
-  }
-  .principal-titulo {
-    font-size: 30px;
-  }
-  .container {
-    display: block;
-  }
+    text-align: end;
+    padding-top: 10px;
 }
 
-@media (max-width: 480px) {
-  .menu {
+.img-decoracion-experiencias {
+    width: 100px;
+}
+
+.experiencia-publicada {
+    position: relative;
+    padding: 50px 0px;
+}
+
+.experiencia-publicada img {
+    position: absolute;
+}
+
+.img-experiencia1 {
+    width: 100px;
+    left: 100px;
+    top: -5px;
+    border: solid yellowgreen 3px;
+    border-radius: 50px;
+}
+
+.img-experiencia2 {
+    width: 70px;
+    right: 100px;
+    top: -5px;
+    border: solid pink 4px;
+    border-radius: 50px;
+}
+
+.img-experiencia3 {
+    width: 70px;
+    top: 200px;
+    left: 70px;
+    border: solid cornflowerblue 3px;
+    border-radius: 50px;
+}
+
+.img-experiencia4 {
+    width: 50px;
+    top: 190px;
+    right: 200px;
+    border: solid plum 3px;
+    border-radius: 50px;
+}
+
+.img-experiencia5 {
+    width: 40px;
+    top: 290px;
+    left: 550px;
+    border: solid orange 3px;
+    border-radius: 50px;
+}
+
+.login {
     width: 100%;
-    position: fixed;
-    left: -100%;
-    height: 100vh;
-    background: blue;
-    z-index: 999;
-    transition: all 0.3s ease;
-  }
-  .menu.show {
-    left: 0;
-  }
-  .list {
+    height: auto;
+    position: relative;
+}
+
+.login-container {
+    padding: 300px 0px;
+    text-align: center;
+}
+
+.login-container h2 {
+    color: #4682b4;
+}
+
+.formulario {
+    border: solid blue 3px;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50px 0px;
+}
+
+.formulario h2 {
+    font-size: 30px;
+    padding: 10px;
+}
+
+.inputs {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
-  }
-  .nav label {
-    display: inline-flex;
-    align-items: center;
-    cursor: pointer;
-  }
-  .check:checked ~ .menu {
-    max-height: 100%;
-  }
-  .div-img-principal {
-    width: 100%;
-  }
-  .principal-img {
-    width: 90%;
-    height: 90%;
-    top: 0;
-  }
-  .principal-titulo {
-    font-size: 15px;
-  }
-  .texto {
-    width: 100%;
-    font-size: 20px;
-    padding: 15px 5px;
-    top: 0;
-  }
-  .principal-titulo {
-    font-size: 30px;
-  }
-  .principal-texto {
-    margin-right: 0px;
-  }
-  .cards {
-    display: block;
-    padding: 0px 5px;
-  }
-  .carreras {
-    padding-top: 50px;
-  }
-  .card {
-    top: 0;
-    width: 100%;
-    margin: 15px 0px;
-  }
-  .carreras-titulo {
-    text-align: center;
-    padding: 0px;
-  }
-  .carreras-titulo h2 {
-    color: #4682b4;
-    font-size: 30px;
-  }
-  .carreras-container {
-    display: block;
-    width: 100%;
-    padding: 10px 0px;
-  }
-  .carreras-nombre {
-    width: 80%;
-    text-align: center;
-    margin: 0px 50px;
-    padding: 15px 0px;
-  }
-  .carreras-nombre img {
-    width: 90%;
-  }
-  .beneficios-container {
-    display: block;
-  }
-  .beneficios-imagenes {
-    display: none;
-  }
-  .beneficios-parrafos {
-    width: 100%;
-  }
-  .beneficios-parrafos h2 {
-    text-align: center;
-  }
-  .beneficios-parrafos-container {
-    padding-left: 20px;
-  }
-  .beneficios-texto {
-    padding-left: 10px;
-    padding-right: 25px;
-  }
-  .beneficios-texto h3,
-  p {
-    width: 100%;
-  }
-  .experiencias-alumnos h2 {
-    padding: 10px 10px;
-    font-size: 25px;
-    padding: 10px 10px;
-  }
-  .fa-regular {
-    border: solid transparent 2px;
-  }
-  .experiencias-alumnos p {
+    justify-content: center;
+    padding: 20px 0px;
+}
+
+.inputs input {
     padding: 10px 40px;
-    font-size: 15px;
-  }
-  .experiencia-alumno {
-    margin: 10px 70px;
-  }
-  .img-experiencia1,
-  .img-experiencia2,
-  .img-experiencia3,
-  .img-experiencia4,
-  .img-experiencia5 {
-    display: none;
-  }
-  .formulario {
-    padding: 20px 60px;
-  }
-  .formulario h2 {
-    font-size: 25px;
+    margin: 5px 0px;
+    border: solid blue 2px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.formulario button {
+    color: white;
+    background-color: #4682b4;
+    padding: 10px 50px;
+    border: solid transparent 1px;
+    border-radius: 10px;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    background-color: #4682b4;
+    color: #fff;
+    position: relative;
+}
+
+.footer-container {
+    display: flex;
+}
+
+.footer-seccion {
+    width: 30%;
+    padding: 15px;
+}
+
+.logo-footer {
+    padding-bottom: 20px;
+    width: 95%;
+}
+
+.footer-iconos {
+    width: 25px;
+    padding: 15px 0px;
+    margin-right: 30px;
+}
+
+.footer-listas {
+    display: flex;
+    width: 70%;
+    padding: 10px;
+}
+
+.footer-listas ul {
+    width: 100%;
+}
+
+.footer-listas ul li {
+    margin: 12px 0px;
+    padding-left: 20px;
+}
+
+.footer-listas ul li a {
+    color: #fff;
+}
+
+.copyright {
+    position: relative;
+}
+
+.linea {
+    width: 50%;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    top: 0%;
+    left: 25%;
+    transform: translateY(-50%);
+}
+
+.wsp {
+    width: 90px;
+}
+
+.copyright p {
+    text-align: center;
     padding: 10px 0px;
-  }
-  .footer-container {
-    display: block;
-  }
-  footer {
-    font-size: 15px;
-  }
-  .footer-seccion {
-    width: 100%;
-  }
-  .footer-listas {
-    width: 100%;
-  }
+}
+
+.imagen-wsp {
+    position: relative;
+}
+
+.copyright button {
+    background-color: transparent;
+    border: solid transparent 1px;
+    position: absolute;
+    top: -58px;
+    right: 10px;
+}
+
+.menu-container {
+    display: none;
+}
+
+@media (max-width: 1075px) {
+    .card {
+        margin-top: 40px;
+    }
+    .carreras-container {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 902px) {
+    .enlace-logo {
+        padding-left: 20px;
+    }
+    .nav ul li a {
+        font-size: 12px;
+    }
+    .principal-titulo {
+        font-size: 30px;
+    }
+    .menu-container {
+        height: 100%;
+        padding: 10px 0px;
+    }
+    .menu-container a {
+        color: #fff;
+        font-size: 20px;
+    }
+    .container {
+        display: block;
+    }
+    .div-img-principal {
+        width: 100%;
+    }
+    .menu-container {
+        display: block;
+    }
+    .menu {
+        width: 100%;
+        display: block;
+        position: fixed;
+        left: -100%;
+        height: 100vh;
+        background: #4682b4;
+        z-index: 999;
+        transition: all 0.3s ease;
+    }
+    .menu-container {
+        height: 100%;
+        padding: 10px 0px;
+    }
+    .menu-container a {
+        color: #fff;
+        font-size: 20px;
+    }
+    .menu-container li {
+        margin: 20px 0px;
+    }
+    #closeMenu {
+        background-color: #176eaa;
+        border: solid transparent 1px;
+        border-radius: 20px;
+        padding: 2% 30%;
+        margin: 0px 17%;
+        color: #fff;
+    }
+    .nav label {
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    .menu.show {
+        left: 0;
+    }
+    .list {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .check:checked~.menu {
+        max-height: 100%;
+    }
+    .menus {
+        display: none;
+    }
+    .list {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .check:checked~.menu {
+        max-height: 100%;
+    }
+    .container {
+        display: flex;
+    }
+    .principal-img {
+        width: 90%;
+        height: 90%;
+        top: 0;
+    }
+    .principal-titulo {
+        font-size: 15px;
+    }
+    .texto {
+        width: 100%;
+        font-size: 20px;
+        padding: 15px 5px;
+        top: 0;
+    }
+    .principal-titulo {
+        font-size: 30px;
+    }
+    .principal-texto {
+        margin-right: 0px;
+    }
+    .cards {
+        display: block;
+        padding: 0px 5px;
+    }
+    .carreras {
+        padding-top: 50px;
+    }
+    .card {
+        top: 0;
+        width: 80%;
+        margin: 15px 12%;
+    }
+    .carreras-titulo {
+        text-align: center;
+        padding: 0px 30px;
+    }
+    .carreras-titulo h2 {
+        color: #4682b4;
+        font-size: 35px;
+    }
+    .carreras-titulo p {
+        padding: 20px 80px;
+    }
+    .carreras-container {
+        display: block;
+        width: 100%;
+        padding: 10px 0px;
+    }
+    .carreras-nombre {
+        width: 100%;
+        text-align: center;
+        padding-top: 50px;
+        display: flex;
+    }
+    .carreras-info {
+        padding-top: 30px;
+        width: 50%;
+    }
+    .imagenes-ca {
+        width: 50%;
+    }
+    .imagenes-ca img {
+        width: 90%;
+    }
+    .beneficios-container {
+        display: block;
+    }
+    .beneficios-imagenes {
+        display: none;
+    }
+    .beneficios-parrafos {
+        width: 100%;
+    }
+    .beneficios-parrafos h2 {
+        text-align: center;
+    }
+    .beneficios-parrafos-container {
+        padding-left: 20px;
+    }
+    .beneficios-texto {
+        padding-left: 10px;
+        padding-right: 25px;
+    }
+    .beneficios-texto h3,
+    p {
+        width: 100%;
+    }
+    .experiencias-alumnos h2 {
+        padding: 10px 10px;
+        font-size: 25px;
+        padding: 10px 10px;
+    }
+    .fa-regular {
+        border: solid transparent 2px;
+    }
+    .experiencias-alumnos p {
+        padding: 10px 40px;
+        font-size: 15px;
+    }
+    .experiencia-alumno {
+        margin: 10px 70px;
+    }
+    .img-experiencia1,
+    .img-experiencia2,
+    .img-experiencia3,
+    .img-experiencia4,
+    .img-experiencia5 {
+        display: none;
+    }
+    .formulario {
+        padding: 20px 60px;
+    }
+    .formulario h2 {
+        font-size: 25px;
+        padding: 10px 0px;
+    }
+    .footer-container {
+        display: block;
+    }
+    footer {
+        font-size: 15px;
+    }
+    .footer-seccion {
+        width: 100%;
+    }
+    .footer-listas {
+        width: 100%;
+    }
+}
+
+@media (max-width: 580px) {
+    .container {
+        display: block;
+    }
+    .menu {
+        width: 100%;
+        position: fixed;
+        left: -100%;
+        height: 100vh;
+        background: #4682b4;
+        z-index: 999;
+        transition: all 0.3s ease;
+    }
+    .menus {
+        display: none;
+    }
+    .menu-container {
+        height: 100%;
+        padding: 10px 0px;
+    }
+    .menu-container a {
+        color: #fff;
+        font-size: 20px;
+    }
+    .menu-container li {
+        margin: 20px 0px;
+    }
+    #closeMenu {
+        background-color: #176eaa;
+        border: solid transparent 1px;
+        border-radius: 20px;
+        padding: 2% 30%;
+        margin: 0px 17%;
+        color: #fff;
+    }
+    .menu.show {
+        left: 0;
+    }
+    .list {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .nav label {
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    .check:checked~.menu {
+        max-height: 100%;
+    }
+    .div-img-principal {
+        width: 100%;
+    }
+    .principal-img {
+        width: 90%;
+        height: 90%;
+        top: 0;
+    }
+    .principal-titulo {
+        font-size: 15px;
+    }
+    .texto {
+        width: 100%;
+        font-size: 20px;
+        padding: 15px 5px;
+        top: 0;
+    }
+    .principal-titulo {
+        font-size: 30px;
+    }
+    .principal-texto {
+        margin-right: 0px;
+    }
+    .cards {
+        display: block;
+        padding: 0px 5px;
+    }
+    .carreras {
+        padding-top: 50px;
+    }
+    .card {
+        top: 0;
+        width: 100%;
+        margin: 15px 0px;
+    }
+    .carreras-titulo {
+        text-align: center;
+        padding: 0px;
+    }
+    .carreras-titulo h2 {
+        color: #4682b4;
+        font-size: 30px;
+    }
+    .carreras-nombre {
+        width: 80%;
+        text-align: center;
+        display: block;
+        padding: 15px 0px;
+        width: 100%;
+        padding: 10px 0px;
+    }
+    .imagenes-ca {
+        width: 100%;
+    }
+    .carreras-info {
+        width: 100%;
+        text-align: center;
+    }
+    .beneficios-container {
+        display: block;
+    }
+    .beneficios-imagenes {
+        display: none;
+    }
+    .beneficios-parrafos {
+        width: 100%;
+    }
+    .beneficios-parrafos h2 {
+        text-align: center;
+    }
+    .beneficios-parrafos-container {
+        padding-left: 20px;
+    }
+    .beneficios-texto {
+        padding-left: 10px;
+        padding-right: 25px;
+    }
+    .beneficios-texto h3,
+    p {
+        width: 100%;
+    }
+    .experiencias-alumnos h2 {
+        padding: 10px 10px;
+        font-size: 25px;
+        padding: 10px 10px;
+    }
+    .fa-regular {
+        border: solid transparent 2px;
+    }
+    .experiencias-alumnos p {
+        padding: 10px 40px;
+        font-size: 15px;
+    }
+    .experiencia-alumno {
+        margin: 10px 70px;
+    }
+    .img-experiencia1,
+    .img-experiencia2,
+    .img-experiencia3,
+    .img-experiencia4,
+    .img-experiencia5 {
+        display: none;
+    }
+    .formulario {
+        padding: 20px 60px;
+    }
+    .formulario h2 {
+        font-size: 25px;
+        padding: 10px 0px;
+    }
+    .footer-container {
+        display: block;
+    }
+    footer {
+        font-size: 15px;
+    }
+    .footer-seccion {
+        width: 100%;
+    }
+    .footer-listas {
+        width: 100%;
+    }
 }

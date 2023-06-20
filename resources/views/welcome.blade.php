@@ -14,14 +14,14 @@
     />
   </head>
   <body>
-    <div class="menu" id="menu">
+  <div class="menu" id="menu">
       <div class="menu-container">
         <ul class="list">
-          <li><a href="" class="link">Nosotros</a></li>
-          <li><a href="" class="link">Productos</a></li>
+          <li><a href="" class="link">Carreras</a></li>
           <li><a href="" class="link">Cursos</a></li>
-          <li><a href="" class="link">Proyectos</a></li>
-          <li><a href="" class="link">Contactenos</a></li>
+          <li><a href="" class="link">Diplomados</a></li>
+          <li><a href="" class="link">Nosotros</a></li>
+          <li><a href="" class="link">Login</a></li>
         </ul>
         <button id="closeMenu">Cerrar</button>
       </div>
@@ -36,34 +36,18 @@
       </label>
       <div class="menus">
         <ul class="lista">
-        <li class="">
-          <a class="" href="{{url('nosotros_')}}"><h2 class="" style="font-family: 'Inter','Poppins';color:#fff;font-size:16px;">Nosotros</h2> </a>
-        </li>
-        <li class="">
-          <a class="" href="{{url('productos_')}}"><h2 class="" style="font-family: 'Inter','Poppins';color:#fff;font-size:16px;margin-left:15px;">Productos</h2>
-          </a>
-        </li>
-        <li class="">
-          <a class="" href="{{url('cursos_')}}"><h2 class="" style="font-family: 'Inter','Poppins';color:#fff;font-size:16px;margin-left:15px;">Cursos</h2>
-          </a>
-        </li>
-        <li class="">
-          <a class="" href="{{url('proyectos_')}}"><h2 class="" style="font-family: 'Inter','Poppins';color:#fff;font-size:16px;margin-left:15px;">Proyectos</h2>
-          </a>
-        </li>
-        <li class="">
-         <div class="d-flex">
-             <img src="{{url("/iconos_imagenes/whatsapp_2.png")}}" class="d-inline rounded-circle" style="width:20px;height:16px;margin-top:11px;margin-right:-7px;margin-left:15px;"alt="">  
-               <a class="nav-link d-inline fw-bold" href="{{url('contactenos_')}}"><h2 class="" style="font-family: 'Inter','Poppins';color:#fff;font-size:16px;margin-left:0px;">Contáctenos</h2>
-               </a>
-
-         </div>   
-        </li>
-        <li class="nav-item">
-        <form method="GET" action="{{ url('intranet_') }}">
-        <button style="background-color:#7F97F9;color:#fff;border-radius: 10px;padding:5px 15px;margin-left:15px;font-family: 'Inter','Poppins';font-size 17px;border-color:#7F97F9;">Iniciar Sesión</button>
-        </form>
-      </li>
+          <li><a href="{{url('nosotros_')}}" class="link">Nosotros</a></li>
+          <li><a href="{{url('productos_')}}" class="link">Productos</a></li>
+          <li><a href="{{url('cursos_')}}" class="link">Cursos</a></li>
+          <li><a href="{{url('proyectos_')}}" class="link">Proyectos</a></li>
+          <li>
+            <a href="{{url('contactenos_')}}" class="link">Contáctenos</a>
+          </li>
+          <li class="nav-item">
+            <form method="GET" action="{{ url('intranet_') }}">
+              <button>Iniciar Sesión</button>
+            </form>
+          </li>
         </ul>
       </div>
     </nav>
