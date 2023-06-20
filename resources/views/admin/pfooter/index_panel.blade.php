@@ -1,4 +1,4 @@
-@extends('templates.panel_personal')
+@extends('templates.panel_personal_prin')
 
 @section('title', 'Configuración Variados')
 

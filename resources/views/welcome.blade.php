@@ -1,128 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desarrollo Web</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <style>
-        @import url('https://fonts.googleapis.com/css?family=Lato:400,700');
-        *{
-          font-family: 'Lato';
-        }
-        .container {
-    max-width: 1400px;
-    margin: auto;
-}
-
-.color-acento {
-    color: #F2CC8F;
-}
-#somos-proya .container {
-        display: flex;
-        justify-content: space-evenly;
-    }
-    #somos-proya .texto {
-        width: 50%;
-        max-width: 600px;
-        text-align: initial;
-        padding-left: 30px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    #somos-proya h2 {
-        margin-top: 0px;
-    }
-    #somos-proya .img-container {
-        /*background-image: url("imagenes/Pnosotros/{$Pnosotros->imagen}");*/
-        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-        background-size: cover;
-        background-position: center center;
-        height: 300px;
-        width: 300px;
-        border: 1px solid #ced4da;
-  border-radius: 0.25rem;
-  -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-    }
-    #alfa .container {
-        padding-top:200px;
-        padding-left:150px;
-        padding-right:150px;
-    }
-    #alfa .container p{
-        padding-left:220px;
-        padding-right:220px;
-        text-decoration:justify;
-    }
-    #alfa h1{
-        color:#176EAA;
-        font-weight:bold;
-    }
-    #alfa .caja{
-        /**border-color:#000;
-        border:1px solid;**/
-        padding-left:30px;
-        padding-top:30px;
-        padding-right:30px;
-        padding-bottom:20px;
-    }
-    #alfa img{
-        width:310px;
-        height:240px;
-    }
-    #alfa .caja h3{
-      color:#176EAA;
-      text-align:center;
-      font-size:24px;
-      margin-top:14px;
-    }
-    #alfa .caja h5{
-      color:#ODODOD;
-      font-size: 14px;
-      text-align:center;
-    }
-    </style>    
-</head>
-<body>
-<nav class="navbar navbar-expand-lg" style="font-family: 'Inter','Poppins';background-color:#4682B4;color:#0D0D0D;">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="{{url('index')}}">
-    <div class="d-flex align-content-center">
-   
-<img src="{{url("/iconos/logo_1.png")}}" class="d-inline bg-light" style="width:200px; height:50px;margin-left:150px;" alt="">
-<h4 class="d-inline ps-3  display-4 fw-bold pt-3" style="font-family: 'Inter','Poppins';color:#fff;font-size:20px;">Tecnobots Perú</h4>
-</div>
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse d-flex justify-content-end " id="navbarSupportedContent" style="margin-right:150px;">
-      <ul class="navbar-nav mb-2 mb-lg-0">
-      <li class="nav-item">
-          <a class="nav-link fw-bold " href="{{url('nosotros_')}}"><h2 class="" style="font-family: 'Inter','Poppins';color:#fff;font-size:16px;">Nosotros</h2> </a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tecnobots</title>
+    <link rel="stylesheet" href="/css/style2.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="menu" id="menu">
+      <div class="menu-container">
+        <ul class="list">
+          <li><a href="" class="link">Nosotros</a></li>
+          <li><a href="" class="link">Productos</a></li>
+          <li><a href="" class="link">Cursos</a></li>
+          <li><a href="" class="link">Proyectos</a></li>
+          <li><a href="" class="link">Contactenos</a></li>
+        </ul>
+        <button id="closeMenu">Cerrar</button>
+      </div>
+    </div>
+    <nav class="nav">
+      <a href="" class="enlace-logo">
+        <img src="iconos/logo.jpg" alt="" class="logo" />
+      </a>
+      <input type="checkbox" class="check" />
+      <label id="checkBtn" for="" class="checkbtn">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+      <div class="menus">
+        <ul class="lista">
+        <li class="">
+          <a class="" href="{{url('nosotros_')}}"><h2 class="" style="font-family: 'Inter','Poppins';color:#fff;font-size:16px;">Nosotros</h2> </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link fw-bold" href="{{url('productos_')}}"><h2 class="" style="font-family: 'Inter','Poppins';color:#fff;font-size:16px;margin-left:15px;">Productos</h2>
+        <li class="">
+          <a class="" href="{{url('productos_')}}"><h2 class="" style="font-family: 'Inter','Poppins';color:#fff;font-size:16px;margin-left:15px;">Productos</h2>
           </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link fw-bold" href="{{url('cursos_')}}"><h2 class="" style="font-family: 'Inter','Poppins';color:#fff;font-size:16px;margin-left:15px;">Cursos</h2>
+        <li class="">
+          <a class="" href="{{url('cursos_')}}"><h2 class="" style="font-family: 'Inter','Poppins';color:#fff;font-size:16px;margin-left:15px;">Cursos</h2>
           </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link fw-bold" href="{{url('proyectos_')}}"><h2 class="" style="font-family: 'Inter','Poppins';color:#fff;font-size:16px;margin-left:15px;">Proyectos</h2>
+        <li class="">
+          <a class="" href="{{url('proyectos_')}}"><h2 class="" style="font-family: 'Inter','Poppins';color:#fff;font-size:16px;margin-left:15px;">Proyectos</h2>
           </a>
         </li>
-        <li class="nav-item">
+        <li class="">
          <div class="d-flex">
              <img src="{{url("/iconos_imagenes/whatsapp_2.png")}}" class="d-inline rounded-circle" style="width:20px;height:16px;margin-top:11px;margin-right:-7px;margin-left:15px;"alt="">  
                <a class="nav-link d-inline fw-bold" href="{{url('contactenos_')}}"><h2 class="" style="font-family: 'Inter','Poppins';color:#fff;font-size:16px;margin-left:0px;">Contáctenos</h2>
@@ -135,57 +64,243 @@
         <button style="background-color:#7F97F9;color:#fff;border-radius: 10px;padding:5px 15px;margin-left:15px;font-family: 'Inter','Poppins';font-size 17px;border-color:#7F97F9;">Iniciar Sesión</button>
         </form>
       </li>
-      </ul>
-      
-    </div>
-  </div>
-</nav>
-
-<section id="somos-proya">
-        <div class="container">
-            <div class="">
-            <img src="/iconos/pexel_andrea.png" class="img-container" alt="d1">
-            </div>
-            <div class="texto">
-                <h2>Una <span class="color-acento">Revolucionaria</span></h2>
-                <h2>forma <span class="color-acento">de Educar</span></h2>
-                <p>"La educación en linea es un aprendizaje electrónico que<br>
-se basa en Internet para la interacción entre profesores y alumnos y la<br>
-distribución de material didáctico."</p>
-            </div>
+        </ul>
+      </div>
+    </nav>
+    <section class="principal">
+      <div class="container">
+        <div class="div-img-principal">
+          <img src="iconos/pexel_andrea.png" alt="" class="principal-img" />
         </div>
-</section>
-<section id="alfa">
-    <div class="container">
-          <h1 class="text-center">Productos</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ipsa, veniam quaerat earum inventore dolores debitis consequuntur repellat eius impedit porr</p>
-          <div class="row mt-5">
-            <div class="card col-sm-4 caja">
-                <img src="/iconos/Rectangle6.png" alt="">
-                <h3>Marqueting Digital</h3>
-                <h5>Duración: 5 Semestres(3 años)</h5>
-                <h5>Modalidad: Semipresencial</h5>
-                <h5>Titulación: Titulo a nombre de la Nacion</h5>
+        <div class="texto">
+          <h2 class="principal-titulo">Una Revolucionaria forma de Educar</h2>
+          <p class="principal-texto">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+            aliquam inventore similique modi ipsa culpa eum facere repellendus
+            molestiae, voluptates exercitationem provident deleniti, illum
+            maxime beatae. Deleniti ullam optio veritatis!
+          </p>
+          <button class="btn-icon">
+            <i class="fa-solid fa-circle-play"></i>
+          </button>
+          <label href="#" class="principal-icono">Conocenos</label>
+        </div>
+      </div>
+    </section>
+    <div class="cards">
+      <div class="card">
+        <i class="fa-sharp fa-solid fa-people-group icono-card"></i>
+        <h4>60,000+</h4>
+        <p>Horas</p>
+      </div>
+      <div class="card">
+        <i class="fa-sharp fa-solid fa-people-group icono-card"></i>
+        <h4>1,00,000+</h4>
+        <p>Estudiantes</p>
+      </div>
+      <div class="card">
+        <i class="fa-sharp fa-solid fa-people-group icono-card"></i>
+        <h4>10+</h4>
+        <p>Sedes</p>
+      </div>
+    </div>
+    <section class="carreras">
+      <div class="carreras-titulo">
+        <h2>Carreras</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
+          distinctio culpa architecto cupiditate accusantium fugit ducimus
+          doloribus, iure quos fugiat ullam suscipit a reiciendis quaerat
+          exercitationem, odit dolores itaque ad?
+        </p>
+      </div>
+      <div class="carreras-container">
+        <div class="carreras-nombre">
+          <div class="imagenes-ca">
+            <img src="iconos/Rectangle 6.png" alt="" class="carrera-img" />
+          </div>
+          <div class="carreras-info">
+            <h3>Marketing Digital</h3>
+            <p>Duración: 6 semestres(3 años)</p>
+            <p>Modalidad: Semipresencial</p>
+            <p>Titulación: Titulo a nombre de la nación</p>
+          </div>
+        </div>
+        <div class="carreras-nombre">
+          <div class="imagenes-ca">
+            <img src="iconos/Rectangle 9.png" alt="" class="carrera-img" />
+          </div>
+          <div class="carreras-info">
+            <h3>Desarrollo de software</h3>
+            <p>Duración: 6 semestres(3 años)</p>
+            <p>Modalidad: Semipresencial</p>
+            <p>Titulación: Titulo a nombre de la nación</p>
+          </div>
+        </div>
+        <div class="carreras-nombre">
+          <div class="imagenes-ca">
+            <img src="iconos/Rectangle 12.png" alt="" class="carrera-img" />
+          </div>
+          <div class="carreras-info">
+            <h3>Diseño Gráfico</h3>
+            <p>Duración: 6 semestres(3 años)</p>
+            <p>Modalidad: Semipresencial</p>
+            <p>Titulación: Titulo a nombre de la nación</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="beneficios">
+      <div class="beneficios-container">
+        <div class="beneficios-imagenes">
+          <img src="iconos/Ellipse 50.png" alt="" class="beneficios-img1" />
+          <img src="iconos/Ellipse 50.png" alt="" class="beneficios-img2" />
+          <img src="iconos/Ellipse 50.png" alt="" class="beneficios-img3" />
+          <img src="iconos/Ellipse 50.png" alt="" class="beneficios-img4" />
+          <img src="iconos/Ellipse 50.png" alt="" class="beneficios-img5" />
+          <img src="iconos/Ellipse 50.png" alt="" class="beneficios-img6" />
+        </div>
+        <div class="beneficios-parrafos">
+          <h2>Beneficios de estudiar con tecnobots</h2>
+          <div class="beneficios-parrafos-container">
+            <div class="beneficios-iconos">
+              <img src="iconos/titulo.png" alt="" />
             </div>
-            <div class="card col-sm-4 caja">
-                <img src="/iconos/Rectangle6.png" alt="">
-                <h3>Desarrollo de Software</h3>
-                <h5>Duración: 5 Semestres(3 años)</h5>
-                <h5>Modalidad: Semipresencial</h5>
-                <h5>Titulación: Titulo a nombre de la Nacion</h5>
-            </div>
-            <div class="card col-sm-4 caja">
-                <img src="/iconos/Rectangle6.png" alt="">
-                <h3>Diseño Grafico</h3>
-                <h5>Duración: 5 Semestres(3 años)</h5>
-                <h5>Modalidad: Semipresencial</h5>
-                <h5>Titulación: Titulo a nombre de la Nacion</h5>
+            <div class="beneficios-texto">
+              <h3>Titulo a nombre de la nación</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+                aliquam, purus sit amet luctus venenatis, lectus magna fringilla
+                urna, porttitor rhoncus dolor purus non enim
+              </p>
             </div>
           </div>
-    </div>
-
-</section>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-</body>
+          <div class="beneficios-parrafos-container">
+            <div class="beneficios-iconos">
+              <img src="iconos/cursos.png" alt="" />
+            </div>
+            <div class="beneficios-texto">
+              <h3>Titulo a nombre de la nación</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+                aliquam, purus sit amet luctus venenatis, lectus magna fringilla
+                urna, porttitor rhoncus dolor purus non enim
+              </p>
+            </div>
+          </div>
+          <div class="beneficios-parrafos-container">
+            <div class="beneficios-iconos">
+              <img src="iconos/perfil.png" alt="" />
+            </div>
+            <div class="beneficios-texto">
+              <h3>Titulo a nombre de la nación</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+                aliquam, purus sit amet luctus venenatis, lectus magna fringilla
+                urna, porttitor rhoncus dolor purus non enim
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="expeciencias">
+      <div class="experiencias-container">
+        <div class="experiencias-alumnos">
+          <h2>
+            Nuestros alumnos y egresados te cuentan su experiencia estudiando en
+            LOGO
+          </h2>
+          <p>
+            vel fringilla est ullamcorper eget nulla facilisi etiam dignissim
+            diam quis enim lobortis scelerisque fermentum dui faucibus in ornare
+            quam viverra orci
+          </p>
+        </div>
+        <div class="experiencia-publicada">
+          <img src="iconos/Ellipse 50.png" alt="" class="img-experiencia1" />
+          <img src="iconos/Ellipse 50.png" alt="" class="img-experiencia2" />
+          <img src="iconos/Ellipse 50.png" alt="" class="img-experiencia3" />
+          <img src="iconos/Ellipse 50.png" alt="" class="img-experiencia4" />
+          <img src="iconos/Ellipse 50.png" alt="" class="img-experiencia5" />
+          <div class="experiencia-alumno">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+              aliquam, purus sit amet luctus venenatis, lectus magna fringilla
+              urna, porttitor
+            </p>
+            <p class="alumno">-Jeo Lee</p>
+            <img src="iconos/Ellipse 50.png" alt="" class="alumno-img" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="login">
+      <div class="login-container">
+        <form action="" class="formulario">
+          <h2>
+            ¡Conversemos! Hablemos por whatsapp o regístrate y te llamamos.
+          </h2>
+          <div class="inputs">
+            <input type="text" placeholder="Apellidos y Nombres" class="a1" />
+            <input type="text" placeholder="Número" class="a1" />
+            <input type="text" placeholder="Correo" class="a1" />
+          </div>
+          <button>Enviar</button>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-seccion">
+          <img src="iconos/logo.jpg" alt="" class="logo-footer" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+            quisquam vitae reiciendis cupiditate sint ut nihil iure numquam,
+            impedit voluptas aliquam et similique accusantium corporis.
+            Voluptate sequi velit culpa? Molestiae!
+          </p>
+          <img src="iconos/fb.png" alt="" class="footer-iconos" />
+          <img src="iconos/in.png" alt="" class="footer-iconos" />
+          <img src="iconos/in.png" alt="" class="footer-iconos" />
+        </div>
+        <div class="footer-listas">
+          <ul>
+            <li><a href="">Company</a></li>
+            <li><a href="">About us</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Community</a></li>
+            <li><a href="">Testimonial</a></li>
+          </ul>
+          <ul>
+            <li><a href="">Company</a></li>
+            <li><a href="">About us</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Community</a></li>
+            <li><a href="">Testimonial</a></li>
+          </ul>
+          <ul>
+            <li><a href="">Company</a></li>
+            <li><a href="">About us</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Community</a></li>
+            <li><a href="">Testimonial</a></li>
+          </ul>
+          <ul>
+            <li><a href="">Contact Us</a></li>
+            <li><a href="">(91) 98765 4321 54 </a></li>
+            <li><a href="">support@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <div class="linea"></div>
+        <p>Copyright 2020 All rights Reserved . Null</p>
+        <button>
+          <img src="iconos/WhatsApp_icon 1.png" alt="" class="wsp" />
+        </button>
+      </div>
+    </footer>
+    <script src="/js/index.js"></script>
+  </body>
 </html>

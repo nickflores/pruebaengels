@@ -16,7 +16,7 @@
 <!-- Aqui va de la otra pagina -->
     <link rel="stylesheet" href="/css/custom.css">
     <link rel="stylesheet" href="/css/dashboard.css">
-    
+    <link rel="stylesheet" href="/css/style2.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/fixedheader/3.2.0/css/fixedHeader.bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.bootstrap.min.css">
