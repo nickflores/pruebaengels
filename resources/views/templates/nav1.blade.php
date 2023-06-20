@@ -38,7 +38,7 @@
                         </li>
 
                         <li class="mx-2 my-1">
-                        <a href="{{url('sobre_nosotros_')}}" class="nav-link px-3 {{ request()->is(['sobre_nosotros*'])? 'active-item' : null}} menu">
+                        <a href="{{url('sobre_nosotros')}}" class="nav-link px-3 {{ request()->is(['sobre_nosotros*'])? 'active-item' : null}} menu">
                                 <span class="fw-bold">
                                 <i class="bi bi-person-badge me-2"></i>
                                 </span>
